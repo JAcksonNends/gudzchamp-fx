@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Терминал MetaTrader 5 | Gudzchamp FX</title>
+<meta name="description" content="Пошаговая инструкция: вход в аккаунт в MetaTrader 5, поиск инструмента, открытие, изменение и закрытие позиции.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230d0a07'/%3E%3Cg fill='%23ff9a3d'%3E%3Crect x='6' y='12' width='5' height='12' rx='1'/%3E%3Crect x='13.5' y='6' width='5' height='14' rx='1'/%3E%3Crect x='21' y='10' width='5' height='10' rx='1'/%3E%3C/g%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+<nav class="nav"><div class="nav-in">
+  <a class="brand" href="./"><svg viewBox="0 0 26 26" fill="#ff9a3d"><rect x="2" y="9" width="4" height="12" rx="1"/><rect x="11" y="3" width="4" height="15" rx="1"/><rect x="20" y="7" width="4" height="11" rx="1"/><rect x="3.5" y="6" width="1" height="18"/><rect x="12.5" y="1" width="1" height="20"/><rect x="21.5" y="4" width="1" height="17"/></svg><i></i>Gudzchamp <b>FX</b></a>
+  <div class="nav-links">
+    <a href="./">Как читать сетапы</a>
+    <a href="risk.html">Риск-менеджмент</a>
+    <a class="on" href="terminal.html">Терминал MT5</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="hero-in">
+  <div class="tag">Шаг 1 · Пошаговая инструкция</div>
+  <h1>Терминал<br><span class="g">MetaTrader 5</span></h1>
+  <p class="hero-sub">Всё по шагам: от входа в аккаунт до открытия и управления позицией. Торгуем через <strong>лицензированных брокеров FxPro и Vantage Markets</strong>.</p>
+  <div class="btn-row">
+    <a class="btn" href="https://apps.apple.com/app/metatrader-5/id413251709" target="_blank" rel="noopener">Скачать для iOS</a>
+    <a class="btn-ghost" href="https://play.google.com/store/apps/details?id=net.metaquotes.metatrader5" target="_blank" rel="noopener">Скачать для Android</a>
+  </div>
+</div></header>
+
+<main class="content">
+
+  <section class="section">
+    <div class="section-num">01 · Вход</div>
+    <h2>Вход в свой аккаунт</h2>
+    <p>Данные аккаунта (логин, пароль и сервер) брокер отправляет на почту после регистрации. Не нашёл письмо - напиши менеджеру в <a href="https://t.me/gudzchamp_fx_bot" target="_blank" rel="noopener">@gudzchamp_fx_bot</a>.</p>
+    <div class="steps"><div class="step"><div class="step-n">1</div><div class="step-body">
+      <strong>Войди в существующий аккаунт</strong>
+      <ol class="mini">
+        <li>Открой приложение и нажми иконку в <b>левом верхнем углу</b></li>
+        <li>Выбери <span class="k">Управление счетами</span> → <span class="k">Подключиться к существующему счету</span></li>
+        <li>В поиске брокера введи <b>FxPro</b> или <b>Vantage</b> (того, где ты регистрировался) и выбери из списка</li>
+        <li>Введи <b>номер счета (логин)</b> и <b>пароль</b> из письма</li>
+        <li>Выбери <b>сервер</b>, указанный в письме, и нажми <span class="k">Войти</span></li>
+      </ol>
+    </div><div></div></div></div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">02 · Инструмент</div>
+    <h2>Найти инструмент</h2>
+    <div class="steps"><div class="step"><div class="step-n">2</div><div class="step-body">
+      <strong>Добавь инструмент в «Котировки»</strong>
+      <span>Внизу экрана открой вкладку <span class="k">Котировки</span> → нажми <span class="k">+</span> в правом верхнем углу → введи название, например <b>XAUUSD</b> или <b>GOLD</b> → нажми на инструмент, чтобы добавить его в список.</span>
+    </div><div></div></div></div>
+    <div class="note"><h4>💡 XAUUSD и GOLD - это одно и то же</h4>Золото против доллара, просто два названия одного инструмента. У разных брокеров может быть еще суффикс, например XAUUSD+.</div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">03 · Позиция</div>
+    <h2>Открыть позицию</h2>
+    <div class="steps"><div class="step"><div class="step-n">3</div><div class="step-body">
+      <strong>Рыночный ордер - по текущей цене</strong>
+      <ol class="mini">
+        <li>Нажми на инструмент в списке → <span class="k">Торговля</span> (Trade)</li>
+        <li>Тип - <b>Рыночное исполнение</b>: ордер исполнится сразу по текущей цене</li>
+        <li>Укажи <b>объем в лотах</b> (считай <a href="risk.html#calc">калькулятором</a>)</li>
+        <li>Установи <b>Stop Loss</b> и <b>Take profit</b> из сетапа</li>
+        <li>Нажми <span class="k">Buy by Market</span> или <span class="k">Sell by Market</span></li>
+      </ol>
+    </div><div></div></div></div>
+    <div class="shot"><img src="img/sl-tp.jpg" alt="Окно сделки в MT5"><div class="shot-cap">Лот в центре, ниже <span class="warn">Stop Loss</span> и <span class="ok">Take profit</span>, внизу кнопки Sell / Buy by Market.</div></div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">04 · Отложенный ордер</div>
+    <h2>Вход по заданной цене</h2>
+    <p>В окне торговли измени тип на <strong>Отложенный ордер</strong>, выбери подтип, укажи цену входа, SL и TP и нажми «Разместить».</p>
+    <div class="grid2">
+      <div class="mini-card"><h4>Buy Limit / Sell Limit</h4><p>Вход по лучшей цене: сработает, когда цена дойдет до более выгодного уровня, чем текущий.</p></div>
+      <div class="mini-card"><h4>Buy Stop / Sell Stop</h4><p>Вход на пробой: сработает, когда цена пробьет заданный уровень, в направлении движения.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">05 · Управление</div>
+    <h2>Изменить или закрыть позицию</h2>
+    <div class="steps"><div class="step"><div class="step-n">5</div><div class="step-body">
+      <ol class="mini">
+        <li>Внизу открой вкладку <span class="k">Торговля</span> (Trade) - там все открытые позиции</li>
+        <li>Нажми на позицию → <span class="k">Modify position</span>, чтобы изменить <b>SL</b> и <b>TP</b></li>
+        <li>Линии <b>SL</b> и <b>TP</b> на графике можно перетягивать пальцем</li>
+        <li>Чтобы закрыть: нажми на позицию → <span class="k">Close position</span></li>
+      </ol>
+    </div><div></div></div></div>
+    <div class="pair">
+      <div class="shot"><img src="img/close-position.jpg" alt="Close position"><div class="shot-cap"><strong class="ok">Close position</strong> - закрыть сделку</div></div>
+      <div class="shot"><img src="img/modify-position.jpg" alt="Modify position"><div class="shot-cap"><strong>Modify position</strong> - изменить стоп и тейк</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">06 · Видеоинструкция</div>
+    <h2>Посмотри, как это выглядит 👇</h2>
+    <div class="player"><video controls playsinline preload="none" poster="videos/terminal-poster.jpg"><source src="videos/terminal.mp4" type="video/mp4">Твой браузер не поддерживает видео - <a href="videos/terminal.mp4">скачать</a></video></div>
+  </section>
+
+  <div class="steps">
+    <a class="step" href="./"><div class="step-n">2</div><div class="step-body"><strong>Следующий шаг - как читать сетапы</strong><span>Точка входа, SL, TP и безубыток</span></div><div class="step-go">→</div></a>
+  </div>
+</main>
+
+<footer>Gudzchamp FX · MetaTrader 5 · Торговля связана с риском потери средств.</footer>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Как читать сетапы | Gudzchamp FX</title>
+<meta name="description" content="Гайд для новичков комьюнити Оксаны Школы: как читать сетапы, открывать сделки в MetaTrader 5, считать лот и переносить стоп в безубыток.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230d0a07'/%3E%3Cg fill='%23ff9a3d'%3E%3Crect x='6' y='12' width='5' height='12' rx='1'/%3E%3Crect x='13.5' y='6' width='5' height='14' rx='1'/%3E%3Crect x='21' y='10' width='5' height='10' rx='1'/%3E%3C/g%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+<nav class="nav"><div class="nav-in">
+  <a class="brand" href="./"><svg viewBox="0 0 26 26" fill="#ff9a3d"><rect x="2" y="9" width="4" height="12" rx="1"/><rect x="11" y="3" width="4" height="15" rx="1"/><rect x="20" y="7" width="4" height="11" rx="1"/><rect x="3.5" y="6" width="1" height="18"/><rect x="12.5" y="1" width="1" height="20"/><rect x="21.5" y="4" width="1" height="17"/></svg><i></i>Gudzchamp <b>FX</b></a>
+  <div class="nav-links">
+    <a class="on" href="./">Как читать сетапы</a>
+    <a href="risk.html">Риск-менеджмент</a>
+    <a href="terminal.html">Терминал MT5</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="hero-in">
+  <div class="tag">Gudzchamp - Гайд для новичков</div>
+  <h1>Как читать сетапы<br>и <span class="g">не потерять деньги</span></h1>
+  <p class="hero-sub">Большинство теряет деньги не из-за плохого сетапа. <strong>Они просто входят неправильно.</strong> Разбираем всё по шагам, без лишнего.</p>
+
+  <div class="tg">
+    <div class="tg-name">Gudzchamp FX</div>
+    <b>BUY XAU/USD</b><br><br>
+    📍 <span class="num">4170</span> - <span class="num">4172</span><br><br>
+    ❌ Stop loss (SL): <span class="num">4155</span><br>
+    ▶️ Take profit 1: <span class="num">4179.3</span><br>
+    ▶️ Take profit 2: <span class="num">4186.9</span><br>
+    ▶️ Take profit 3: <span class="num">4195</span><br>
+    ▶️ Take profit 4: <span class="num">4221.2</span>
+    <div class="tg-meta">👁 1.2K · 10:42</div>
+  </div>
+  <div class="annot">
+    <div><small>Пара + направление</small><span style="color:var(--green)">BUY XAU/USD</span></div>
+    <div><small>Точка входа 📍</small><span style="color:var(--amber)">4170-4172</span></div>
+    <div><small>Тейки ▶️</small><span style="color:var(--green)">4179.3 / 4186.9 / 4195 / 4221.2</span></div>
+    <div><small>Страховка (SL) ❌</small><span style="color:var(--red)">4155</span></div>
+  </div>
+</div></header>
+
+<main class="content">
+
+  <section class="section" id="s1">
+    <div class="section-num">01 - Разбираем сетап</div>
+    <h2>Что всё это значит</h2>
+    <p>В каждом сетапе одни и те же параметры. Ничего придумывать не нужно: <strong>твоя задача - просто повторить.</strong></p>
+    <div class="glossary">
+      <div class="gloss"><div class="badge entry">XAUUSD</div><div><strong>Торговая пара</strong><span>XAU = золото, USD = доллар. Торгуем цену золота в долларах. Точно так же EURUSD - евро к доллару, GBPUSD - фунт к доллару.</span></div></div>
+      <div class="gloss"><div class="badge">BUY</div><div><strong>Покупаем, ждем роста</strong><span>Зарабатываем, если цена идет вверх.</span></div></div>
+      <div class="gloss"><div class="badge sell">SELL</div><div><strong>Продаем, ждем падения</strong><span>Зарабатываем, если цена идет вниз.</span></div></div>
+      <div class="gloss"><div class="badge entry">Вход 📍</div><div><strong>Точка входа</strong><span>Диапазон цены, по которой заходим. Если в BUY-сетапе вход 4170-4172, а цена уже 4180, ты опоздал: такой сетап пропускаем.</span></div></div>
+      <div class="gloss"><div class="badge sl">SL ❌</div><div><strong>Stop Loss - страховка</strong><span>Если цена пошла не туда, сделка сама закроется с небольшим минусом. Без стопа можно потерять весь депозит за одну сделку. Ставим всегда.</span></div></div>
+      <div class="gloss"><div class="badge">TP ▶️</div><div><strong>Take Profit - цели</strong><span>Уровни, где фиксируем прибыль. TP1, TP2, TP3, TP4: чем дальше, тем больше профит. На каждом тейке закрывается часть позиции.</span></div></div>
+      <div class="gloss"><div class="badge">БУ</div><div><strong>Безубыток</strong><span>Когда в канале пишем «стоп в БУ», переносишь Stop Loss на свою точку входа. Подробно ниже.</span></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="s2">
+    <div class="section-num">02 - Открываем сделку</div>
+    <h2>Алгоритм в MetaTrader 5</h2>
+    <p>Торгуем через приложение MT5 (App Store или Google Play), подключенное к твоему счету. Как установить и войти - в гайде <a href="terminal.html">«Терминал MT5»</a>.</p>
+
+    <div class="steps"><div class="step"><div class="step-n">1</div><div class="step-body"><strong>Находишь актив в котировках</strong><span>Открываешь раздел <b>Quotes</b>, находишь <b>XAUUSD</b> (или пару из сетапа) и нажимаешь на нее.</span></div><div></div></div></div>
+    <div class="shot"><img src="img/quotes-trade.jpg" alt="MT5: выбор актива"><div class="shot-cap">Нажимаешь на <strong>XAUUSD</strong> → выбираешь <strong>Trade</strong></div></div>
+
+    <div class="steps"><div class="step"><div class="step-n">2</div><div class="step-body"><strong>Выставляешь лот</strong><span>Объем позиции считаешь калькулятором в гайде <a href="risk.html#calc">«Риск-менеджмент»</a>. Нажимаешь на цифру в центре и меняешь. Не бери максимум.</span></div><div></div></div></div>
+    <div class="shot"><img src="img/lot.jpg" alt="MT5: лот"><div class="shot-cap"><strong>Лот (объем)</strong> - цифра в центре. <span class="warn">Цены на скрине другие, чем в сетапе выше: это просто пример интерфейса.</span></div></div>
+
+    <div class="steps"><div class="step"><div class="step-n">3</div><div class="step-body"><strong>Вводишь SL и TP из сетапа</strong><span>Нажимаешь на поле Stop Loss и вводишь цифру из сетапа. То же самое с Take Profit. <b>Строго как написано, ничего не меняешь.</b></span></div><div></div></div></div>
+    <div class="shot"><img src="img/sl-tp.jpg" alt="MT5: SL и TP"><div class="shot-cap">Вводишь <span class="warn">Stop Loss</span> и <span class="ok">Take Profit</span> точно как в сетапе. На скрине они уже заполнены.</div></div>
+
+    <div class="steps"><div class="step"><div class="step-n">4</div><div class="step-body"><strong>Нажимаешь Buy by Market или Sell by Market</strong><span>В зависимости от направления сетапа. Всё, сделка открыта.</span></div><div></div></div></div>
+    <div class="shot"><img src="img/close-confirm.jpg" alt="MT5: кнопки сделки"><div class="shot-cap">Оранжевая кнопка внизу закрывает <strong>уже открытую</strong> позицию и появляется только тогда, когда она есть. Новая сделка открывается кнопками <strong>Sell / Buy by Market</strong>.</div></div>
+  </section>
+
+  <section class="section" id="s3">
+    <div class="section-num">03 - Закрываем позицию</div>
+    <h2>Как закрыть сделку вручную</h2>
+    <p>Тейки и стоп срабатывают сами. Но если нужно выйти раньше или закрыть часть позиции:</p>
+    <div class="pair">
+      <div class="shot"><img src="img/close-position.jpg" alt="Close position"><div class="shot-cap">Раздел <strong>Trade</strong> → нажимаешь на сделку → <strong class="ok">Close position</strong></div></div>
+      <div class="shot"><img src="img/modify-position.jpg" alt="Modify position"><div class="shot-cap">Изменить SL или TP - <strong>Modify position</strong>. Так же переносим стоп в безубыток.</div></div>
+    </div>
+    <div class="note"><strong>Позиции на скринах - для примера.</strong> Цифры могут отличаться от реального сетапа, здесь показана только механика.</div>
+  </section>
+
+  <section class="section" id="s4">
+    <div class="section-num">04 - Размер лота</div>
+    <h2>Сколько ставить на сделку</h2>
+    <p>Лот - это объем позиции. На золоте при лоте <strong>0.01</strong> каждый $1 движения цены = <strong>$1</strong> прибыли или убытка. При лоте 0.1 - уже $10.</p>
+    <p>Поэтому лот считаем от стопа: сначала решаешь, сколько готов потерять (2-5% депозита), потом делишь на расстояние до стопа.</p>
+    <div class="tbl-wrap"><table class="tbl">
+      <thead><tr><th>Депозит</th><th>Риск 3%</th><th>Лот при стопе $15</th></tr></thead>
+      <tbody>
+        <tr><td>$300</td><td>$9</td><td class="v">0.01*</td></tr>
+        <tr><td>$500</td><td>$15</td><td class="v">0.01</td></tr>
+        <tr><td>$1 000</td><td>$30</td><td class="v">0.02</td></tr>
+        <tr><td>$2 000</td><td>$60</td><td class="v">0.04</td></tr>
+        <tr><td>$3 000</td><td>$90</td><td class="v">0.06</td></tr>
+        <tr><td>$5 000</td><td>$150</td><td class="v">0.10</td></tr>
+      </tbody>
+    </table></div>
+    <p class="calc-hint">* 0.01 - минимальный лот. На $300 риск будет чуть больше 3% (~5%).</p>
+    <a class="link-card" href="risk.html#calc"><div class="link-ic">🧮</div><div><strong>Калькулятор лота</strong><span>Вводишь депозит, риск, вход и стоп - получаешь лот</span></div><div class="arr">→</div></a>
+    <div class="note"><strong>Если тейков несколько</strong>, лот делишь поровну. Открыл 0.08 с четырьмя тейками → по 0.02 на каждый. Цена дошла до TP1 - закрылась четверть позиции, остальное идет дальше.</div>
+  </section>
+
+  <section class="section" id="s5">
+    <div class="section-num">05 - Безубыток</div>
+    <h2>Что значит «стоп в БУ»</h2>
+    <p>Иногда в канале пишем: <strong>«Переносим стоп в безубыток»</strong>. Вот как это делается:</p>
+    <div class="hl"><div class="t">💡 Логика простая</div><p>SELL по золоту, вход <strong>4706</strong>, стоп <strong>4725</strong>. Цена взяла TP1 на <strong>4701</strong>, первую прибыль уже забрали. Открываешь позицию → <strong>Modify position</strong> → меняешь Stop Loss с <strong>4725</strong> на <strong>4706</strong> (точку входа). Теперь, даже если цена развернется, ты в нуле. А если пойдет дальше - берем TP2, TP3, TP4.</p></div>
+    <div class="pair">
+      <div class="shot"><img src="img/modify-open.jpg" alt="Modify position"><div class="shot-cap">Нажимаешь на сделку → <strong>Modify position</strong></div></div>
+      <div class="shot"><img src="img/modify-sl.jpg" alt="Стоп на точку входа"><div class="shot-cap">Ставишь Stop Loss на <strong>цену входа</strong> → <strong>Modify</strong>. Всё, ты в безубытке.</div></div>
+    </div>
+    <div class="tg" style="margin-top:20px">
+      <div class="tg-quote"><b>Gudzchamp FX</b>SELL XAUUSD 📍 4706-4708 ✅ Take profit 1: 4701 ✅ Take profit 2...</div>
+      Если у вас консервативная торговля, переносите стоп лосс по XAUUSD в безубыток. Если риск-менеджмент позволяет, держите позицию дальше.
+      <div class="tg-meta">👁 980 · 11:04</div>
+    </div>
+    <p style="text-align:center;font-size:13px;margin-top:12px">Так выглядит сообщение в канале</p>
+  </section>
+
+  <section class="section" id="s6">
+    <div class="section-num">06 - Риск</div>
+    <h2>Это важнее самих сетапов</h2>
+    <p>Можно иметь крутые сетапы и все равно слить депозит, если не следить за риском. <strong>На одну сделку - не более 2-5% депозита.</strong></p>
+    <div class="risk">
+      <div class="risk-item"><div class="risk-pct" style="color:var(--green)">1-2%</div><div class="risk-bar-wrap"><div class="risk-bar" style="width:15%;background:var(--green)"></div></div><div class="risk-label" style="color:var(--green)">Консервативно</div></div>
+      <div class="risk-item"><div class="risk-pct" style="color:var(--amber)">2-5%</div><div class="risk-bar-wrap"><div class="risk-bar" style="width:35%;background:var(--amber)"></div></div><div class="risk-label" style="color:var(--amber)">Наш стандарт</div></div>
+      <div class="risk-item"><div class="risk-pct" style="color:var(--orange)">5-10%</div><div class="risk-bar-wrap"><div class="risk-bar" style="width:65%;background:var(--orange)"></div></div><div class="risk-label" style="color:var(--orange)">Опасно</div></div>
+      <div class="risk-item"><div class="risk-pct" style="color:var(--red)">10%+</div><div class="risk-bar-wrap"><div class="risk-bar" style="width:100%;background:var(--red)"></div></div><div class="risk-label" style="color:var(--red)">Казино 😬</div></div>
+    </div>
+    <div class="warn-block">Стоп лосс обязателен. Всегда. Без исключений. <strong>Не пытайся «пересидеть» убыток</strong> - это самый быстрый способ обнулить счет.</div>
+    <a class="link-card" href="risk.html"><div class="link-ic">🛡</div><div><strong>Полный гайд по риск-менеджменту</strong><span>Точка входа, стоп, лот, закрытие руками, анти-лудка</span></div><div class="arr">→</div></a>
+  </section>
+
+  <section class="section" id="s7">
+    <div class="section-num">07 - Опоздал</div>
+    <h2>Что делать, если пропустил вход</h2>
+    <p>Бывает: не смотрел в телефон, а цена уже ушла. Без паники.</p>
+    <div class="grid2">
+      <div class="mini-card bad"><h4>Цена ушла в профит без тебя</h4><p>Дальше чем на $2-3 от входа - пропускаем. Стоп становится далеко, риск больше, а прибыль меньше.</p></div>
+      <div class="mini-card ok"><h4>Цена немного пошла против</h4><p>Но еще не дошла до стопа - можно заходить: риск даже меньше, чем в сетапе.</p></div>
+    </div>
+    <div class="note">Пропущенный сетап - это не потеря. Потеря - это прыгнуть в уже ушедший поезд и выйти в минус. Сетапы приходят каждый день.</div>
+  </section>
+
+  <div class="cta">
+    <h3>Всё понятно - что дальше? 🤝</h3>
+    <p>В комьюнити мы с командой каждый день даем сетапы в реальном времени, объясняем каждый вход и сопровождаем сделку до закрытия.</p>
+    <a class="btn" href="https://t.me/gudzchamp_fx_bot" target="_blank" rel="noopener">Присоединиться через @gudzchamp_fx_bot</a>
+  </div>
+</main>
+
+<footer>Gudzchamp FX · Торговля связана с риском потери средств. Заходите только теми деньгами, которые готовы потерять.</footer>
+</body>
+</html>

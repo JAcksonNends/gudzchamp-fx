@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Риск-менеджмент | Gudzchamp FX</title>
+<meta name="description" content="Правила, которые сохраняют депозит: точка входа, стоп-лосс, размер лота, закрытие руками и анти-лудка. С калькулятором лота.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230d0a07'/%3E%3Cg fill='%23ff9a3d'%3E%3Crect x='6' y='12' width='5' height='12' rx='1'/%3E%3Crect x='13.5' y='6' width='5' height='14' rx='1'/%3E%3Crect x='21' y='10' width='5' height='10' rx='1'/%3E%3C/g%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+<nav class="nav"><div class="nav-in">
+  <a class="brand" href="./"><svg viewBox="0 0 26 26" fill="#ff9a3d"><rect x="2" y="9" width="4" height="12" rx="1"/><rect x="11" y="3" width="4" height="15" rx="1"/><rect x="20" y="7" width="4" height="11" rx="1"/><rect x="3.5" y="6" width="1" height="18"/><rect x="12.5" y="1" width="1" height="20"/><rect x="21.5" y="4" width="1" height="17"/></svg><i></i>Gudzchamp <b>FX</b></a>
+  <div class="nav-links">
+    <a href="./">Как читать сетапы</a>
+    <a class="on" href="risk.html">Риск-менеджмент</a>
+    <a href="terminal.html">Терминал MT5</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="hero-in">
+  <div class="tag">Gudzchamp · Риск-менеджмент</div>
+  <h1>Правила, которые<br><span class="g">сохраняют депозит</span></h1>
+  <p class="hero-sub">Большинство новичков думает, что риск-менеджмент - это просто поставить стоп-лосс. На самом деле он начинается еще <strong>до открытия сделки</strong>.</p>
+</div></header>
+
+<main class="content">
+
+  <section class="section">
+    <div class="section-num">00 · Главное</div>
+    <h2>Что решает риск-менеджмент</h2>
+    <ul class="list">
+      <li>стоит ли вообще заходить в позицию</li>
+      <li>каким объемом заходить</li>
+      <li>где поставить стоп-лосс</li>
+      <li>где зафиксировать прибыль</li>
+      <li>когда остановиться и сделать перерыв</li>
+    </ul>
+    <div class="hl"><div class="t">Твоя главная задача</div><p>Не заработать максимум на одной сделке. Задача - <strong>сохранить депозит, пройти длинную серию сделок и остаться в игре.</strong></p></div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">01 · Точка входа</div>
+    <h2>Когда заходить, а когда нет</h2>
+    <p>Мы с командой всегда даем диапазон входа (или конкретную цену), например <strong>📍 4396</strong>.</p>
+    <div class="grid2">
+      <div class="mini-card bad"><h4>Цена полетела в профит без тебя</h4><p>Для BUY вверх, для SELL вниз. Не заходи: риск становится больше, а результат хуже.</p></div>
+      <div class="mini-card ok"><h4>Цена ушла немного в минус от входа</h4><p>Для BUY вниз, для SELL вверх, но стоп еще не зацепила. Можно заходить: риск меньше, результат лучше.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">02 · Стоп-лосс</div>
+    <h2>Стоп ставим сразу</h2>
+    <p>Стоп-лосс ставишь сразу после входа или вместе с открытием сделки. Его уровень уже есть в сетапе, который мы даем в канале.</p>
+    <div class="grid2">
+      <div class="mini-card ok"><h4>Стоп можно</h4>
+        <ul class="list" style="margin:8px 0 0"><li>подтянуть в безубыток</li><li>перевести в прибыль</li><li>оставить на первоначальном уровне</li></ul></div>
+      <div class="mini-card bad"><h4>Стоп НЕЛЬЗЯ</h4>
+        <ul class="list no" style="margin:8px 0 0"><li>отодвигать дальше в минус</li><li>увеличивать после открытия</li><li>убирать с надеждой «сейчас развернется»</li><li>превращать сделку в «долгосрочную инвестицию»</li></ul></div>
+    </div>
+    <div class="shot"><img src="img/close-confirm.jpg" alt="Стоп и тейк в окне сделки MT5"><div class="shot-cap">Stop Loss и Take Profit заполняешь в окне сделки <strong>до</strong> нажатия Buy / Sell by Market.</div></div>
+    <a class="link-card" href="./#s2"><div class="link-ic">📲</div><div><strong>Как открыть сделку в MT5 по шагам</strong><span>Гайд «Как читать сетапы»</span></div><div class="arr">→</div></a>
+  </section>
+
+  <section class="section">
+    <div class="section-num">03 · Сумма в сделке</div>
+    <h2>Что такое лот</h2>
+    <p>До открытия сделки ты должен точно знать, <strong>сколько потеряешь, если цена дойдет до стопа.</strong></p>
+    <p>В отличие от крипты, здесь мы торгуем не в долларах, а в <strong>лотах</strong>. Лот - это размер позиции. Это НЕ сумма депозита, не размер риска и не плечо. Лот лишь определяет, <strong>насколько сильно меняется результат при движении цены.</strong></p>
+    <p>В MetaTrader 1 лот = определенное количество актива, указанное в параметре <span class="k">Contract size</span>. Его задает брокер.</p>
+
+    <h3>Валютные пары (EUR/USD)</h3>
+    <div class="tbl-wrap"><table class="tbl">
+      <thead><tr><th>Объем</th><th>Размер позиции</th><th>Стоимость 1 пункта</th></tr></thead>
+      <tbody>
+        <tr><td>1.00 лота</td><td>€100 000</td><td class="v">$10</td></tr>
+        <tr><td>0.10 лота</td><td>€10 000</td><td class="v">$1</td></tr>
+        <tr><td>0.01 лота</td><td>€1 000</td><td class="v">$0.10</td></tr>
+      </tbody>
+    </table></div>
+    <p class="calc-hint">Пункт - это стандартный pip, например движение EUR/USD с 1.1000 до 1.1001.</p>
+    <div class="note"><h4>Пример EUR/USD</h4>Купил EUR/USD по 1.1000, Stop Loss на 1.0950. Расстояние до стопа - <strong>50 пунктов</strong>.<br>
+      1.00 лота → риск ≈ <strong>$500</strong> · 0.10 лота → ≈ <strong>$50</strong> · 0.02 лота → ≈ <strong>$10</strong> · 0.01 лота → ≈ <strong>$5</strong><br>
+      Депозит $1 000 и допустимый риск $10 → тебе подходит <strong>0.02 лота</strong>.</div>
+
+    <h3>Золото (XAU/USD)</h3>
+    <div class="tbl-wrap"><table class="tbl">
+      <thead><tr><th>Объем</th><th>Количество золота</th><th>Результат при движении на $1</th></tr></thead>
+      <tbody>
+        <tr><td>1.00 лота</td><td>100 унций</td><td class="v">±$100</td></tr>
+        <tr><td>0.10 лота</td><td>10 унций</td><td class="v">±$10</td></tr>
+        <tr><td>0.01 лота</td><td>1 унция</td><td class="v">±$1</td></tr>
+      </tbody>
+    </table></div>
+    <div class="note"><h4>Пример с золотом</h4>Покупка XAU/USD по <strong>$2 500</strong>, Stop Loss <strong>$2 490</strong>. Расстояние до стопа - <strong>$10</strong>. Если 1 лот = 100 унций:<br>
+      1.00 лота: $10 × 100 = <strong>$1 000</strong> риска · 0.10 лота: <strong>$100</strong> · 0.01 лота: <strong>$10</strong><br>
+      Депозит $1 000 и допустимый риск $10 → открываешь <strong>0.01 лота</strong>.</div>
+  </section>
+
+  <section class="section" id="calc">
+    <div class="section-num">04 · Калькулятор</div>
+    <h2>Посчитай свой лот</h2>
+    <div class="card calc">
+      <div class="calc-grid">
+        <div><label for="c-inst">Инструмент</label>
+          <select id="c-inst">
+            <option value="100">XAUUSD (золото)</option>
+            <option value="5000">XAGUSD (серебро)</option>
+            <option value="100000">EURUSD</option>
+            <option value="100000">GBPUSD</option>
+            <option value="100000">AUDUSD</option>
+            <option value="100000">NZDUSD</option>
+          </select></div>
+        <div><label for="c-dep">Депозит, $</label><input id="c-dep" type="number" inputmode="decimal" value="1000" min="0"></div>
+        <div><label for="c-risk">Риск на сделку, %</label><input id="c-risk" type="number" inputmode="decimal" value="3" min="0" step="0.5"></div>
+        <div><label for="c-trades">Тейков в сетапе</label><input id="c-trades" type="number" inputmode="numeric" value="1" min="1" max="6"></div>
+        <div><label for="c-entry">Цена входа</label><input id="c-entry" type="number" inputmode="decimal" value="4170" step="any"></div>
+        <div><label for="c-sl">Stop Loss</label><input id="c-sl" type="number" inputmode="decimal" value="4155" step="any"></div>
+      </div>
+      <div class="calc-out">
+        <div><small>Твой лот</small><b id="o-lot">-</b></div>
+        <div class="rk"><small>Риск до стопа</small><b id="o-risk">-</b></div>
+      </div>
+      <p class="calc-hint" id="o-hint"></p>
+    </div>
+    <p class="calc-hint">Contract size в калькуляторе: золото 100, серебро 5 000, валютные пары 100 000. Если у твоего брокера другой, смотри спецификацию инструмента в MT5.</p>
+    <a class="link-card" href="https://fxverify.com/widgets/position-size-calculator" target="_blank" rel="noopener"><div class="link-ic">🌐</div><div><strong>Запасной калькулятор fxverify</strong><span>Как им пользоваться - в видео ниже</span></div><div class="arr">→</div></a>
+    <div class="player"><video controls playsinline preload="none" poster="videos/risk-poster.jpg"><source src="videos/risk.mp4" type="video/mp4"></video></div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">05 · Закрытие руками</div>
+    <h2>Когда можно выйти раньше</h2>
+    <p>Иногда после входа ситуация на рынке меняется:</p>
+    <ul class="list">
+      <li>выходят важные новости</li>
+      <li>появляется резкий встречный объем</li>
+      <li>цена ломает структуру не в твою сторону</li>
+      <li>уровень, от которого ждали реакцию, не удерживается</li>
+      <li>первоначальный сценарий теряет актуальность</li>
+    </ul>
+    <p>Тогда сделку можно закрыть руками частично или полностью, либо подтянуть стоп в прибыль, чтобы защитить уже полученное движение.</p>
+    <div class="hl"><div class="t">Но отличай рынок от страха</div><p>Объективное изменение ситуации - это одно, а обычный страх потерять открытую прибыль - другое. Если сценарий актуален, не управляй позицией на эмоциях. <strong>Лучше недозаработать, чем потерять.</strong></p></div>
+  </section>
+
+  <section class="section">
+    <div class="section-num">06 · Анти-лудка</div>
+    <h2>Правило трех сделок</h2>
+    <p>После <strong>трех стопов подряд</strong> хочется срочно отыграться. Начинаешь видеть входы там, где их нет, увеличивать риск и нарушать собственные правила.</p>
+    <p>После <strong>трех тейков подряд</strong> другая опасность - ощущение, что ты уже понял рынок. Анализ становится поверхностным, а входы импульсивными.</p>
+    <p>Первая сделка кажется случайностью, вторая - совпадением, а после третьей мозг уже ждет продолжения серии. Статистически четвертая сделка не должна быть такой же, но твое восприятие уже изменилось.</p>
+    <div class="shot wide"><img src="img/three-in-row.jpg" alt="Три тейка или три стопа подряд - пауза"></div>
+    <p><strong>Поэтому после трех тейков или трех стопов подряд:</strong></p>
+    <ul class="list">
+      <li>закрой терминал</li>
+      <li>сделай перерыв</li>
+      <li>пересмотри скриншоты сделок</li>
+      <li>проверь, придерживался ли стратегии</li>
+      <li>оцени свое эмоциональное состояние</li>
+      <li>возвращайся к торговле только после полной перезагрузки</li>
+    </ul>
+  </section>
+
+  <div class="cta">
+    <h3>Торгуй вместе с нами 🧡</h3>
+    <p>В комьюнити каждый день сетапы с точкой входа, стопом и тейками, сопровождение каждой сделки и менеджер, который поможет с первыми шагами.</p>
+    <a class="btn" href="https://t.me/gudzchamp_fx_bot" target="_blank" rel="noopener">Присоединиться через @gudzchamp_fx_bot</a>
+  </div>
+</main>
+
+<footer>Gudzchamp FX · Торговля связана с риском потери средств. Заходите только теми деньгами, которые готовы потерять.</footer>
+
+<script>
+(function(){
+  var $=function(id){return document.getElementById(id)};
+  var ids=['c-inst','c-dep','c-risk','c-trades','c-entry','c-sl'];
+  function n(id){return parseFloat(String($(id).value).replace(',','.'))}
+  function calc(){
+    var cs=n('c-inst'),dep=n('c-dep'),rp=n('c-risk'),tp=Math.max(1,Math.round(n('c-trades'))||1),e=n('c-entry'),sl=n('c-sl');
+    var dist=Math.abs(e-sl);
+    if(!(dep>0&&rp>0&&dist>0&&cs>0)){$('o-lot').textContent='-';$('o-risk').textContent='-';$('o-hint').textContent='Заполни все поля: вход и стоп должны отличаться.';return}
+    var riskUsd=dep*rp/100, raw=riskUsd/(dist*cs);
+    var per=Math.floor(raw/tp*100+1e-9)/100;
+    var hint='';
+    if(per<0.01){per=0.01;hint='Даже минимальный лот 0.01 на каждый тейк дает больший риск, чем ты выбрал. Подумай, заходить ли, или уменьши количество тейков.'}
+    var lot=Math.round(per*tp*100)/100, real=lot*dist*cs;
+    $('o-lot').textContent=lot.toFixed(2);
+    $('o-risk').textContent='$'+real.toFixed(2)+' ('+(real/dep*100).toFixed(1)+'%)';
+    if(!hint&&tp>1)hint='Открываешь '+tp+' позиции по '+per.toFixed(2)+' лота, каждую со своим тейком и общим стопом.';
+    $('o-hint').textContent=hint;
+  }
+  ids.forEach(function(i){$(i).addEventListener('input',calc);$(i).addEventListener('change',calc)});
+  calc();
+})();
+</script>
+</body>
+</html>
